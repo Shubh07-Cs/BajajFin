@@ -10,6 +10,8 @@ from app.core.config import settings
 from app.api.endpoints import router as api_router
 from app.services.query_service import QueryService
 
+
+
 app = FastAPI(
     title=settings.APP_NAME,
     version=settings.VERSION,
