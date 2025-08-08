@@ -35,3 +35,8 @@ query_service = QueryService()
 @app.get("/")
 async def root():
     return {"message": "Welcome! Use POST /api/v1/hackrx/run to submit queries."}
+
+
+@app.get("/health")
+def healthcheck():
+    return {"status": "ok"}
